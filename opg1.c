@@ -16,7 +16,6 @@ void encrypt_decrypt(unsigned int key,
     int i;
     for (i = 0; i < len; i++) {
 
-        /* Obtain a random byte to use as pad */
         unsigned char pad = (unsigned char) rand();
 
         /* Encrypt a byte by XORing it with the pad */
