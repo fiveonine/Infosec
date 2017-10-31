@@ -26,14 +26,16 @@ void encrypt_decrypt(unsigned int key,
 
 
  void main() {
-   uint k1 = 12;
-   uint k2 = 12;
-   char m1 = 'a';
-   char M;
-   char m2;
-   printf("Orginal melding:%c\n", m1);
-   encrypt_decrypt(k1,&m1,&M);
-   printf("kryptert:%c\n", M);
-   encrypt_decrypt(k2,&M,&m2);
-   printf("dekryptert: %c\n", m2);
+   uint k1 = 13;
+   uint k2 = 13;
+   char m1[] = "test123";
+   char M[strlen(m1)];
+   char m2[strlen(m1)];
+   printf("Orginal melding:%s\n", m1);
+
+   encrypt_decrypt(k1,m1,M);
+   printf("kryptert:%s\n", M);
+
+   encrypt_decrypt(k2,M,m2);
+   printf("dekryptert: %s\n", m2);
  }
