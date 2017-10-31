@@ -50,6 +50,8 @@ void encrypt_decrypt(unsigned int key,
 ```
 2. Hvorfor er bruken av rand-funksjonen problematisk?
 
+``Fordi rand() kan ha forskjellig implementering på forskjellige maskiner. Samme nøkkel kan da gi forskjellig svar.``
+
 3. I tillegg er krypteringsmetoden sårbar mot både brute force-angrep og
 nøkkelkollisjonsangrep. Forklar hvorfor. Hva måtte vi gjøre om vi ville
 “redde” krypteringsmetoden?
