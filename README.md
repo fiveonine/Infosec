@@ -68,9 +68,13 @@ er sett opp i klasserommet.
 fire kategoriar åtak mot kryptering. Kva kategori fell åtaket frå oppgåve a)
 under?
 
+``Vi benytter oss av IV-collision. Vi samler inn en rekke IV'er og så venter på at aksesspunktet skal gjenta en.``
+
 4. I dei fyrste implementasjonane av WEP var ikkje IV -ane tilfeldige men
 sekvensnummer. Ein konsekvens av dette var høgt gjenbruk av IV -ar.
 Forklar korleis dette opna for nøkkelkollisjonsåtak mot WEP.
+
+``Økt antall kollisjoner gjør det lettere å revesrere nøkkelstrengen. ``
 
 **Oppgåve3:**
 1. Følg framgangsmåten for å kryptere eit bilete med AES-128 og ECB.
