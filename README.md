@@ -56,6 +56,8 @@ void encrypt_decrypt(unsigned int key,
 nøkkelkollisjonsangrep. Forklar hvorfor. Hva måtte vi gjøre om vi ville
 “redde” krypteringsmetoden?
 
+``seeden i srand() er begrenset av størrelsen på variabler datamaskinen kan håndtere, for en 64bit maskin blir dette 64bit. I tillegg har ikke srand() nødvendigvis noe beskyttelse mot at forskjellige nøkler kan gi samme resultat, og det kan fort oppstå nøkkelkollisjoner.``
+
 **Oppgåve2:**
 1 Bruk framgangsmåten under til å knekke WEP-krypteringa til Wi-Fi-et som
 er sett opp i klasserommet.
