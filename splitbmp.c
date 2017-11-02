@@ -14,6 +14,7 @@ int main(int argc, char *argv[]) {
   if (infile == 0) {
     fprintf(stderr, "Could not open file %s\n", argv[1]);
     exit(2);
+    
   }
 
   FILE *headfile = fopen("HEAD", "w");
@@ -36,7 +37,7 @@ int main(int argc, char *argv[]) {
     fputc(c, bodyfile);
     c = fgetc(infile);
   }
-  
+
   fclose(infile);
   fclose(headfile);
   fclose(bodyfile);
