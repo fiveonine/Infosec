@@ -48,6 +48,7 @@ void encrypt_decrypt(unsigned int key,
  }
 
 ```
+
 2. Hvorfor er bruken av rand-funksjonen problematisk?
 
 ``Fordi rand() kan ha forskjellig implementering på forskjellige maskiner. Samme nøkkel kan da gi forskjellig svar.``
@@ -82,3 +83,6 @@ Forklar korleis dette opna for nøkkelkollisjonsåtak mot WEP.
 2. Krypter det same biletet med den same nøkkelen men med CBC.
 
 3. Samanlikne dei to bileta. Kvifor har dei blitt som dei har blitt?
+`` ECB håndterer en block på 128-bit(lengden av nøkkelen) for så å fortsette til den neste. Dette fører til at dersom en klartekst blokk er lik som en annen vil den krypterte også være lik. Dette gjør igjen at vi fortsatt kan se mønsteret i bildet men ikke fargene. </br>
+CBC derimot "lenker" sammen blokkene slik at når den krypeter en blokk blir den krypterte avhengig av forige blokk. Dette fører til at mønsteret i bildet ikke lenger er synelig.
+``

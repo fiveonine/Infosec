@@ -1,0 +1,8 @@
+
+BSSID, First time seen, Last time seen, channel, Speed, Privacy, Cipher, Authentication, Power, # beacons, # IV, LAN IP, ID-length, ESSID, Key
+00:19:5B:B2:87:65, 2017-10-31 11:48:54, 2017-10-31 13:53:35,  2,  54, WEP, WEP, OPN, -49,    69980,       59,   0.  0.  0.  0,   8, SomeWifi, 
+
+Station MAC, First time seen, Last time seen, Power, # packets, BSSID, Probed ESSIDs
+BB:BB:BB:BB:BB:BB, 2017-10-31 11:48:58, 2017-10-31 12:27:40,   0,     3134, 00:19:5B:B2:87:65,
+C4:E9:84:15:98:4B, 2017-10-31 12:28:02, 2017-10-31 13:53:25,   0,     9436, 00:19:5B:B2:87:65,
+
