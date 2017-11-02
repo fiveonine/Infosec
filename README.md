@@ -60,16 +60,18 @@ nøkkelkollisjonsangrep. Forklar hvorfor. Hva måtte vi gjøre om vi ville
 ``seeden i srand() er begrenset av størrelsen på variabler datamaskinen kan håndtere, for en 64bit maskin blir dette 64bit. I tillegg har ikke srand() nødvendigvis noe beskyttelse mot at forskjellige nøkler kan gi samme resultat, og det kan fort oppstå nøkkelkollisjoner.``
 
 **Oppgåve2:**
-1 Bruk framgangsmåten under til å knekke WEP-krypteringa til Wi-Fi-et som
+1. Bruk framgangsmåten under til å knekke WEP-krypteringa til Wi-Fi-et som
 er sett opp i klasserommet.
+
+``wep-key:4A57675853373F6267623F7452``
 
 2. Bruk Wireshark til å samanlikne pakke-capture før og etter dekryptering.
 
+``Vi ser nå til og fra iper og innholdet i pakkene``
+
 3. På side 389 i læreboka (Introduction to computer security) er det skildra
 fire kategoriar åtak mot kryptering. Kva kategori fell åtaket frå oppgåve a)
-under?
-
-``Vi benytter oss av IV-collision. Vi samler inn en rekke IV'er og så venter på at aksesspunktet skal gjenta en.``
+under? </br>``Vi benytter oss av IV-collision. Vi samler inn en rekke IV'er og så venter på at aksesspunktet skal gjenta en.``
 
 4. I dei fyrste implementasjonane av WEP var ikkje IV -ane tilfeldige men
 sekvensnummer. Ein konsekvens av dette var høgt gjenbruk av IV -ar.
@@ -84,6 +86,6 @@ Forklar korleis dette opna for nøkkelkollisjonsåtak mot WEP.
 
 3. Samanlikne dei to bileta. Kvifor har dei blitt som dei har blitt? </br>
 
-`` ECB håndterer en block på 128-bit(lengden av nøkkelen) for så å fortsette til den neste. Dette fører til at dersom en klartekst blokk er lik som en annen vil den krypterte også være lik. Dette gjør igjen at vi fortsatt kan se mønsteret i bildet men ikke fargene. </br>
-CBC derimot "lenker" sammen blokkene slik at når den krypeter en blokk blir den krypterte avhengig av forige blokk. Dette fører til at mønsteret i bildet ikke lenger er synelig.
+`` ECB håndterer en block på 128-bit(lengden av nøkkelen) for så å fortsette til den neste. Dette fører til at dersom en klartekst blokk er lik som en annen vil den krypterte også være lik. Dette gjør igjen at vi fortsatt kan se mønsteret i bildet men ikke fargene.`` </br>
+``CBC derimot "lenker" sammen blokkene slik at når den krypeter en blokk blir den krypterte avhengig av forige blokk. Dette fører til at mønsteret i bildet ikke lenger er synelig.
 ``
