@@ -1,5 +1,7 @@
 # Infosec
-
+```
+Drangevåg, Strømsvåg, Braskereid, Gundersen
+```
 **Oppgave1:**
 1. Lag et C-program som krypterer og dekrypterer med encrypt decrypt-
 funksjonen og demonstrer at funksjonen fungerer.
